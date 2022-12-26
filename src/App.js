@@ -6,15 +6,14 @@ import useWindowDimensions from "./Tools/windowDimensions";
 export const App = () => {
     const dimensions = useWindowDimensions()
 
-    switch (dimensions.width >= 1000) {
-        case true:
-            return <App_w/>
-        case false:
-            return <App_m/>
+    if (dimensions.width >= 1000) {
+        return <AppWeb/>
+    } else {
+        return <AppMobile/>
     }
 }
 
-export const App_w = () => {
+export const AppWeb = () => {
 
     const [show, setShow] = useState(false);
     const parent = useRef(null)
@@ -110,7 +109,7 @@ export const App_w = () => {
     )
 }
 
-export const App_m = () => {
+export const AppMobile = () => {
 
     return(
         <div></div>
