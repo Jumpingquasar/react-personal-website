@@ -8,18 +8,44 @@
 }
 
 .CircleClickable {
+  animation: ease-out;
   position: absolute;
-  transition: 0.5s;
+  transition: 1.5s;
   height: 100px;
   width: 100px;
   border-radius: 100%;
   background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .ClickMe {
-  transition: 0.5s;
+  animation: ease-out;
+  position: absolute;
+  transition: 2.5s;
+  z-index: 10;
   height: 100px;
   width: 100px;
   border-radius: 100%;
   background-color: indianred;
+}
+
+.squareClose {
+  animation: ease-out;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 10;
+  scale: 0;
+  height: 50px;
+  width: 60px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 25%;
+  background-color: rgb(50, 117, 79);
+}
+
+.circleText {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: beige;
 }
