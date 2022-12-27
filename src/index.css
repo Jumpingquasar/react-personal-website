@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "HackBot";
+  src: local("HackBot"),
+  url("./Fonts/HackBot.otf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "VCR";
+  src: local("VCR"),
+  url("./Fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+  font-weight: bold;
+}
