@@ -9,7 +9,7 @@ export const App = () => {
     if (dimensions.width >= 1000) {
         return <AppWeb/>
     } else {
-        return <AppMobile/>
+        return <AppWeb/>
     }
 }
 
@@ -27,38 +27,38 @@ export const AppWeb = () => {
         if (!show){
             setShow(!show)
             let elements = document.getElementsByClassName("CircleClickable")
-            elements[0].style.transform = "translate(50vh,0vh)"
-            elements[1].style.transform = "translate(40vh,30vh)"
-            elements[2].style.transform = "translate(-45vh,-25vh)"
-            elements[3].style.transform = "translate(55vh,-35vh)"
-            elements[4].style.transform = "translate(-20vh,0vh)"
-            elements[5].style.transform = "translate(-50vh,30vh)"
+            elements[0].style.transform = "translate(25vw,0vh)"
+            elements[1].style.transform = "translate(20vw,30vh)"
+            elements[2].style.transform = "translate(-25vw,-25vh)"
+            elements[3].style.transform = "translate(35vw,-35vh)"
+            elements[4].style.transform = "translate(-10vw,0vh)"
+            elements[5].style.transform = "translate(-30vw,30vh)"
             let elements_main = document.getElementsByClassName("ClickMe")
-            elements_main[0].style.transform = "translate(67vh,40vh)"
+            elements_main[0].style.transform = "translate(43vw,40vh)"
             elements_main[0].style.borderRadius = "20%"
-            elements_main[0].style.height = "50px"
-            elements_main[0].style.width = "50px"
+            elements_main[0].style.height = "4vw"
+            elements_main[0].style.width = "4vw"
         }
         else {
             setShow(!show)
             let elements = document.getElementsByClassName("CircleClickable")
-            elements[0].style.transform = "translate(0vh,0vh)"
-            elements[1].style.transform = "translate(0vh,0vh)"
-            elements[2].style.transform = "translate(0vh,0vh)"
-            elements[3].style.transform = "translate(0vh,0vh)"
-            elements[4].style.transform = "translate(0vh,0vh)"
-            elements[5].style.transform = "translate(0vh,0vh)"
+            elements[0].style.transform = "translate(0vw,0vh)"
+            elements[1].style.transform = "translate(0vw,0vh)"
+            elements[2].style.transform = "translate(0vw,0vh)"
+            elements[3].style.transform = "translate(0vw,0vh)"
+            elements[4].style.transform = "translate(0vw,0vh)"
+            elements[5].style.transform = "translate(0vw,0vh)"
             let elements_main = document.getElementsByClassName("ClickMe")
-            elements_main[0].style.transform = "translate(0vh,0vh)"
+            elements_main[0].style.transform = "translate(0vw,0vh)"
             elements_main[0].style.borderRadius = "100%"
-            elements_main[0].style.height = "100px"
-            elements_main[0].style.width = "100px"
+            elements_main[0].style.height = "14.1vw"
+            elements_main[0].style.width = "14.1vw"
 
         }
     }
 
-    // const expand = (event) => {event.target.style.transform = "scale(1.1)"}
-    // const shrink = (event) => {event.target.style.transform = "scale(1)"}
+    // const expand = (event) => {event.target.style.border = "2px solid #ffffff"}
+    // const shrink = (event) => {event.target.style.border = "2px hidden #ffffff"}
 
 
     return (
@@ -67,6 +67,7 @@ export const AppWeb = () => {
                  // onMouseEnter={expand}
                  // onMouseLeave={shrink}
                  onClick={reveal}>
+                {show ? <text className={"closeText"}>X</text> : <text className={"openText"}>🖱️</text> }
             </div>
             <div className={"CircleClickable"}
                  // onMouseEnter={expand}
