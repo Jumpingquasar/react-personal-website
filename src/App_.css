@@ -1,0 +1,84 @@
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CircleClickable {
+  animation: ease-out;
+  position: absolute;
+  transition: 1.5s;
+  height: 14vw;
+  width: 14vw;
+  border-radius: 100%;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.ClickMe {
+  animation: ease-out;
+  position: absolute;
+  transition: 2.5s;
+  z-index: 10;
+  height: 14.1vw;
+  width: 14.1vw;
+  border-radius: 100%;
+  background-color: indianred;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.squareClose {
+  animation: ease-out;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 10;
+  scale: 0;
+  height: 50px;
+  width: 60px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 25%;
+  background-color: rgb(50, 117, 79);
+}
+
+.circleText {
+  font-family: VCR;
+  font-size: 1.70vw;
+  letter-spacing: 0.19vw;
+  color: beige;
+  user-select: none;
+}
+
+.closeText {
+  animation: ease-out;
+  transition: 2.5s;
+  font-family: VCR;
+  font-size: 4vw;
+  color: beige;
+  user-select: none;
+}
+
+.openText {
+  animation: ease-out;
+  transition: 1s;
+  font-family: VCR;
+  font-size: 4.5vw;
+  color: beige;
+  user-select: none;
+}
+
+.font-face-hb {
+  font-family: "HackBot";
+}
+
+.font-face-VCR {
+  font-family: "VCR";
+}
+
